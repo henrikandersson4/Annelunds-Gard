@@ -1,0 +1,314 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Great+Vibes&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Genaral Styles */
+:root {
+    --pink: #dcbdad;
+    --white: #fffafa;
+    --grey: #4a4a4a;
+
+    /* Fonts */
+    --logotyp: Great Vibes;
+    --title: Sorts Mill Goudy;
+    --breadtext: David Libre;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font-family: var(--title);
+    font-size: 150%;
+    padding-top: 15px;
+    padding-left: 6px;
+    color: var(--grey);
+}
+
+.section p {
+    font-family: var(--breadtext);
+    padding-left: 4px;
+    padding-right: 4px;
+    color: var(--grey);
+}
+
+h4 {
+    font-family: var(--title);
+    font-size: 100%;
+    padding-top: 15px;
+    padding-left: 6px;
+    color: var(--grey);
+}
+
+
+/* Header */
+header { 
+    background: var(--grey);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    z-index: 10;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Header for gallery.html */
+.only-logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Ski more logo */
+header .logo {
+    position: relative;
+    font-size: 1.5em;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--logotyp);
+    font-size: 300%;
+}
+.sm-logo {
+    color: var(--grey);
+}
+
+
+/* Navigation */
+header .navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    font-family: var(--title);
+}
+
+header .navigation li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+header .navigation li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header .navigation li a:hover {
+    color: var(--grey);
+}
+
+#about, #destinations, #contact {
+    scroll-margin-top: 134px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: var(--pink);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    padding: 0 20%;
+    list-style: none;
+}
+
+.footer li a {
+    color: var(--white);
+    font-size: 150%;
+}
+
+
+/* Main content index.html*/
+/* Hero image */
+#two-skiers {
+    min-height: 700px;
+    width: 100%;
+    background: url("../images/hero_image.jpg") no-repeat center center/cover;
+}
+
+
+/* Bar between hero image and first section */
+.bar {
+    background: var(--grey);
+    color: var(--white);
+    font-family: var(--title);
+}
+
+.bar h2 {
+    font-size: 250%;
+    text-align: center;
+}
+/* Images for the sections */
+#ski-lifts {
+    background: url("../images/ski-lifts.jpg") no-repeat center center/cover;
+    min-height: 300px;
+}
+
+#resorts {
+    background: url("../images/resorts.png") no-repeat center center/cover;
+    min-height: 300px;
+    order: 1;
+}
+
+#pisted-slopes {
+    background: url("../images/pisted-slope.jpg") no-repeat center center/cover;
+    min-height: 300px;
+}
+
+
+/* Button to get to the gallery */
+#button-gallery {
+    padding: 15px 20px;
+    margin: 30px 0px;
+    font-family: var(--title);
+    font-size: 100%;
+    color: var(--white);
+    background: var(--pink);
+    border: none;
+    border-radius: 1em;
+}
+
+#button-gallery:hover {
+    background: var(--grey);
+}
+
+
+/* Contact form */
+#contact-form {
+    font-family: var(--breadtext);
+    color: var(--grey);
+    font-size: 20px;
+    position: relative;
+    padding: 10px 10px;
+}
+
+#contact-form input {
+    width: 100%;
+    height: 40px;
+}
+
+#button-submit {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 15px 0px;
+    font-family: var(--title);
+    font-size: 100%;
+    color: var(--white);
+    background: var(--pink);
+    border: none;
+    border-radius: 1em;
+}
+
+#button-submit:hover {
+    background: var(--grey);
+}
+
+
+/* Media queries for responsivnes */
+@media (max-width: 490px) {
+    header{
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) {
+    .section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+/* Images in the sections */
+    #ski-lifts {
+        min-width: 50%;
+    }
+
+    #resorts {
+        min-width: 50%;
+        order: -1;
+    }
+
+    #pisted-slopes {
+        min-width: 50%;
+    }
+
+    .h3+p {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+/* gallery.html */
+    #gallery li {
+        min-height: 200px;
+    }
+
+}    
+
+@media (max-width: 390px) {
+    #gallery-nav{
+        visibility: hidden;
+    }
+}
+
+
+/* Main content for gallery.html */
+
+#bar-gallery {
+    display: flex;
+    justify-content: center;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+}
+
+#gallery li {
+    height: 400px;
+    position: relative;
+    list-style: none;
+    flex: 1 1 auto;
+}
+
+#gallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.invisble {
+    visibility: hidden;
+    position: absolute;
+}

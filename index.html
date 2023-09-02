@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Welcome to SkiMore, 
+            a collective of five ski resorts across Sweden and Norway.">
+        <!-- Title-->
+        <title>SkiMore</title>
+
+        <!-- Favicon-->
+
+        <!-- Stylesheet-->
+        <link rel="Stylesheet" href="assets/css/style.css" type="text/css">
+    </head>
+
+    <body>
+        <!-- Header and navigation -->
+    <header> 
+        <!-- Header logo -->
+        <a href="index.html" class="logo">Annelunds Gård</a>
+        <nav>
+            <ul class="navigation"> 
+                <li><a href=#about>Bröllops lokal</a></li>
+                <li><a href=#contact>Kontakt</a></li>
+                <li><a href="gallery.html" id="gallery-nav">Foto arkiv</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <!-- Main Content-->
+    <main>
+        <!-- Hero Image-->
+        <div id="two-skiers"></div>
+
+        <!-- Grey bar that says SkiMore-->
+        <div class="bar">
+            <div><h2>Bröllop på Annelunds gård</h2></div>
+        </div>
+
+        
+        <div>
+            <!-- About Section-->
+            <div class="section" id="about">
+                <section class="h3+p">
+                    <h3 class="section-title">Festlokalen</h3>
+
+                    <p>
+                        Festlokalen är en dold skatt på denna gamla gård, många olika typer av minnen har skapats här. 
+                        Belägen i en charmig lada, omgiven av den grönskande landsbygden, bär den på en unik atmosfär som inte går att återskapa. 
+                        När du kliver in genom dess gamla dörrar, omfamnas du av en rustik värme och en tidlös känsla av gemenskap. 
+                        Betonggolvet bär stolt på årens slit, och väggarna är fyllda av gammal rekvesita.
+                    </p>
+                    <br>
+                    <p>
+                        Lokalen är en sammansmältning av det gamla och det nya, med antika möbler och detaljer som vittnar om gårdens historia och tradition. 
+                        Ladan står redo att skapa minnen med en fantastisk himmel av glittrande lampor och dekorationer. 
+                        Här har bröllop firats, kräftskivor jublats. Vänner och familj samlats för att dela ögonblick av glädje. 
+                        Det är en plats där minnen skapas och där historien lever vidare, en symbol för tidlös kärlek och samhörighet.
+                    </p>
+                
+                </section>
+                <div id="ski-lifts"></div>
+            </div>
+        
+
+            <!-- Destinations section -->
+            
+            <div class="section" id="destinations">
+                <div id="resorts"></div>
+                <section class="h3+p">
+                    <h3 class="section-title">Destinations.</h3>
+                    <h4>1. Frostpeak Retreat, Norway:</h4>
+                    <p>Nestled in the heart of Norway's majestic mountains, Frostpeak Retreat offers an enchanting escape for both seasoned
+                    skiers and families seeking their first adventure on the slopes. With a range of trails that cater to different skill
+                    levels, cozy alpine lodges, and breathtaking views, Frostpeak Retreat promises an unforgettable winter experience.</p>
+                    <br>
+                    <h4>2. Alpine Haven, Sweden:</h4>
+                    <p>Experience the serene beauty of the Swedish Alps at Alpine Haven. Immerse yourself in the tranquility of the wilderness
+                    as you glide down immaculate slopes surrounded by snow-covered pines. From challenging black diamond runs to gentle
+                    beginner trails, Alpine Haven offers a diverse range of skiing opportunities.</p>
+                    <br>
+                    <h4>3. Snowcrest Peaks, Norway:</h4>
+                    <p>Snowcrest Peaks is where thrill-seekers and powder enthusiasts converge to experience the exhilaration of off-piste
+                    skiing. With pristine powder fields and backcountry trails, this resort promises an unmatched adventure for those who
+                    crave uncharted slopes and breathtaking descents.</p>
+                    <br>
+                    <h4>4. Nordic Pines, Sweden:</h4>
+                    <p>Nestled in a picturesque forest setting, Nordic Pines combines the charm of traditional Swedish architecture with a
+                    modern ski experience. Glide through snow-laden pine forests, enjoy cross-country trails, and savor the tranquility of
+                    the surroundings, making it an ideal retreat for nature lovers.</p>
+                    <br>
+                    <h4>5. Aurora Slopes, Norway:</h4>
+                    <p>Named after the enchanting Northern Lights, Aurora Slopes offers a ski experience unlike any other. With night skiing
+                    options and a vibrant après-ski scene, this resort brings a touch of magic to your winter adventure. Explore illuminated
+                    trails under the shimmering night sky and create memories that will last a lifetime.</p>
+                    <br>
+                    <p>Each of our five SkiMore resorts presents a world of possibilities, where you can forge lasting memories, challenge your
+                    limits, and embrace the sheer joy of skiing in some of the most captivating winter wonderlands in Scandinavia. Whether
+                    you're a seasoned skier or a first-timer, join us in exploring the diverse terrains and unique offerings of our
+                    exceptional destinations.</p>
+                    <br>
+                    <div class="button">
+                    <button type="button" id="button-gallery" onclick="location.href ='gallery.html'">See our destinations</button>
+                    </div>
+                </section>
+            </div>
+
+
+
+            <!-- Contact Section-->
+            <div class="section" id="contact">
+                <section class="h3+p">
+                    <h3 class="section-title">Contact.</h3>
+                    <!-- Contact form -->
+                    <form id="contact-form">
+                    
+                    
+                        <label for="fname">First Name: *</label>
+                        <input type="text" id="fname" name="fname" placeholder="First Name.." required>
+                    
+                    
+                        <label for="lname">Last Name: *</label>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name.." required>
+                    
+                    
+                        <label for="email">Your Email: *</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email.." required>
+                    
+                    
+                        <label for="brand">Your Question: *</label>
+                        <input type="text" id="brand" name="brand" placeholder="Your Question.." required>
+                    
+                        <!-- Call to action button, SUBMIT -->
+                        <button id="button-submit" type="submit">SUBMIT</button>
+                    
+                    </form>
+                </section>
+                <div id="pisted-slopes"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer-->
+    <footer>
+        <!-- Social media widgets-->
+        <ul class="footer">
+            <li>
+                <!-- Instagram -->
+                <a href="http://www.Instagram.com" target="_blank" rel="noopener" aria-label="Go to our Instagram page(in new tab)"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+                        <li>
+                <!-- Facebook -->
+                <a href="http://www.Facebook.com" target="_blank" rel="noopener" aria-label="Go to our Facebook page(in new tab)"><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+            <li>
+                <!-- Twitter -->
+                <a href="http://www.Twitter.com" target="_blank" rel="noopener" aria-label="Go to our Twitter page(in new tab)"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Font awesome script -->
+    <script src="https://kit.fontawesome.com/e604f35fb9.js" crossorigin="anonymous"></script>
+    </body>
+</html>
